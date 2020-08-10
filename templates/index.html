@@ -1,0 +1,236 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Vegsite</title>
+<!--
+
+TemplateMo 548 Training Studio
+
+https://templatemo.com/tm-548-training-studio
+
+-->
+    <!-- Additional CSS Files -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <div id="header">
+                            <!-- ***** Logo Start ***** -->
+                            <a href="/" class="logo" id="headerLogoImg"><img id="headerLogoImg" src="{% static 'images/logo.png' %}"></a>
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            
+                            <ul class="nav">
+                                <li class="scroll-to-section"><a href="#top" class="active">關於我們</a></li>
+                                <li class="scroll-to-section"><a href="#features">餐廳</a></li>
+                                <li class="scroll-to-section"><a href="#our-classes">地圖</a></li>
+                                <li class="scroll-to-section"><a href="#contact-us">聯絡我們</a></li> 
+                            </ul>        
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                        </div>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <img id="bg-video" src="{% static 'images/veganBanner.jpg' %}">
+            
+        
+
+        <div class="header-text">
+            <div class="caption">
+                <div><h6>Vegans of the World</h6></div>
+                <div id="highlight">
+                    <h2><mark><em>UNITE!!!</em></mark></h2>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section" id="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <h2><em>理念</em></h2>
+                        <!--
+                        <p>以降低成為vegan的門檻作為階段目標<br>高舉Vegan,反物種歧視,解放動物的旗幟<br>抵抗畜牧業、屠宰業的微弱掙扎
+<br>正視大自然的反撲
+<br>重新搭建起人與自然的橋樑
+<br>創造一個對自然、動物更友善的世界</p>-->
+                        <p>if(you.isHuman == True)<br>
+                            you.becomeVegan();<br>
+                        else<br>
+                            system("shutdown -s -f -t 0");<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Call to Action End ***** -->
+    
+    <!-- ***** Features Item Start ***** -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2><em>Vegan</em>-friendly restaurants<br>Vegan友善餐廳</h2>
+                        <img src="{% static 'images/line-dec.png' %}" alt="">
+                        <p>以下是精選的Vegan-friendly餐廳</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="{% static 'images/jammy/front.JPG' %}" alt="First One" style="max-width: 480px;">
+                            </div>
+                            <div class="right-content">
+                                <h4>呷米蔬食餐廳(非全Vegan)</h4>
+                                <p>Please do not re-distribute this template ZIP file on any template collection website. This is not allowed.</p>
+                                <a href="#" class="text-button">了解更多</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="{% static 'images/missGreen/front.jpg' %}" alt="First One" style="max-width: 480px;">
+                            </div>
+                            <div class="right-content">
+                                <h4>Miss Green</h4>
+                                <p>我們是一間Plant-Based 餐廳，我們的核心就是『全植物性飲食』，天然、原型食物、不使用任何動物製品，就是我們的堅持。對於愛動物跟愛地球這方面採取溫柔與教育的方式進行，我們相信只要透過簡單的吃，就足以改變全世界，讓無肉不歡的人能愛上我們的餐點，是我們的使命。</p>
+                                <a href="#" class="text-button">了解更多</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Item End ***** -->    
+    
+    <!-- ***** Our Classes Start ***** -->
+    <section class="section" id="our-classes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2><em>Vegan</em> map</h2>
+                        <img src="{% static 'images/line-dec.png' %}" alt="">
+                        <p>Vegan 一點都不困難<br>以下是我們整理出來大台北地區的Vegan-Friendly餐廳<br>如果想跟我們合作歡迎聯絡我們<br>Credit: 酥皮</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mapContainer">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1U1LBrQdzEC8kkSHS0Cx5EeIub6hAM6Ur" width="1140" height="480"></iframe>
+            </div>
+            
+        </div>
+    </section>
+    <!-- ***** Our Classes End ***** -->
+    
+    
+   
+    <!-- ***** Contact Us Area Starts ***** -->
+    <section class="section" id="contact-us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="contactUs">
+                    <div class="contact-form">
+                     <p>Email: vegsite0203@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area Ends ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2020 Vegsite
+                    
+                    - Designed by <a rel="nofollow" href="https://templatemo.com" class="tm-text-link" target="_parent">Whaever Studio</a></p>
+                    
+                    <!-- You shall support us a little via PayPal to info@templatemo.com -->
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+    
+
+    <!-- Bootstrap -->
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugins -->
+
+    <script src="{% static 'js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/imgfix.min.js' %}"></script>
+    <script src="{% static 'js/mixitup.js' %}"></script>
+    <script src="{% static 'js/accordions.js' %}"></script>
+    <script src="{% static 'js/slideShow' %}"></script>
+    
+    <!-- Global Init -->
+    <script src="{% static 'js/custom.js' %}"></script>
+
+  </body>
+</html>
