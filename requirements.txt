@@ -1,4 +1,12 @@
 asgiref==3.2.10
+dj-database-url==0.5.0
 Django==3.1
+django-heroku==0.3.1
+gunicorn==20.0.4
+mysql-connector-python==8.0.21
+protobuf==3.12.4
+psycopg2==2.8.5
+pytz==2020.1
+six==1.15.0
 sqlparse==0.3.1
-gunicorn
+whitenoise==5.2.0
