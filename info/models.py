@@ -8,7 +8,7 @@ class Restaurants(models.Model):
     address = models.CharField(max_length=1000,unique=True)
     mapUrl = models.CharField(max_length=10000,unique=True)
     imgUrl = ["//assets/images/tbd.png","//assets/images/tbd.png"]
-    testName = "TEST"
+    rank = models.IntegerField()
     
     
     
