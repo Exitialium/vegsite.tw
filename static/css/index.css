@@ -520,7 +520,7 @@ header
     overflow: hidden;
   }
   .header-area .main-nav .nav {
-    float: none;
+    float: left;
     width: 100%;
     display: none;
     -webkit-transition: all 0s ease 0s;
