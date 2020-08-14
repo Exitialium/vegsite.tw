@@ -67,8 +67,9 @@ html[xmlns] .clearfix {
 
 ul, li {
   padding: 0;
-  margin: 0;
-  list-style: none;
+  margin: 15px;
+  display: inline-block;
+  list-style-type: none;
 }
 
 header, nav, section, article, aside, footer, hgroup {
