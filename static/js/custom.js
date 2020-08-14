@@ -53,6 +53,14 @@
 			$('.header-area .nav').slideToggle(200);
 		});
 	}
+    	// Menu Dropdown Toggle
+	if($('.menu-trigger').length){
+		$(".scroll-to-section").on('click', function() {
+			$('.header-area .nav').slideToggle(200);
+		});
+	}
+
+
 
 
 	$(document).ready(function () {
