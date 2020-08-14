@@ -70,7 +70,7 @@ https://templatemo.com/tm-548-training-studio
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>{{object.name}}</h2>
+                        <h2>|{{object.name}}|</h2>
                         <img src="{% static 'images/line-dec.png' %}" alt="waves">
                         
                         <p>Menu Template</p>
@@ -113,9 +113,9 @@ https://templatemo.com/tm-548-training-studio
                     <div class="section-heading">
                         <h2>地點資訊</h2>
                         <img src="{% static 'images/line-dec.png' %}" alt="waves">
-                        <p>地址</p>
+                        <h2>{{object.address}}</h2>
                         <br>
-                        <a><p>Google Map連結</p></a>
+                        {{object.mapUrl}}
                     </div>
                 </div>
             </div>
