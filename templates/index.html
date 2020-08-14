@@ -130,16 +130,16 @@ https://templatemo.com/tm-548-training-studio
                         <p>以下是精選的Vegan-friendly餐廳</p>
                     </div>
                 </div>
-                {% for rest in Restaurants_list%}
+                {% for rest in restaurants_list %}
                 <div class="col-lg-6">
                     <ul class="features-items">
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="{% static 'images/jammy/front.JPG' %}" alt="First One" style="max-width: 100%;">
+                                <img src="{% static "images/"|add:rest.dirName|add:"/front.JPG" %}" alt="First One" style="max-width: 100%;">
                             </div>
                             <div class="right-content">
-                                <h4>rest.name</h4>
-                                <p>Please do not re-distribute this template ZIP file on any template collection website. This is not allowed.</p>
+                                <h4>{{rest.name}}</h4>
+                                <p>{{rest.description}}</p>
                                 <!--<a href="#" class="text-button">了解更多</a>-->
                             </div>
                         </li>
