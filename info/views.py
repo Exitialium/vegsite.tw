@@ -4,7 +4,7 @@ from django.views import generic
 # Create your views here.
 
 class RestList(generic.ListView):
-    queryset = Restaurants.objects.all()
+    queryset = Restaurants.objects.filter(status=1)
     template_name = 'index.html'
 
 class RestDetail(generic.DetailView):

@@ -3,6 +3,11 @@ from django.contrib.auth.models import User
 import uuid
 # Create your models here.
 
+STATUS = (
+    (0,"Draft"),
+    (1,"Publish")
+)
+
 class Restaurants(models.Model):
     name = models.CharField(max_length=100,unique=True)
     slug = models.SlugField(max_length=200, default=uuid.uuid4, unique=True)
