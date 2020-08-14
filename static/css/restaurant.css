@@ -862,7 +862,7 @@ contact
 
 #contact-us .contact-form {
   padding: 80px;
-  background-image: url(../images/contactUs.jpg);
+  background-color: black;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1062,6 +1062,9 @@ preloader
     border-radius: 50%;
 }
 
+.contact-Us {
+  color: white;
+}
 
 /* 
 ---------------------------------------------
