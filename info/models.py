@@ -15,6 +15,7 @@ class Restaurants(models.Model):
     dirName = models.CharField(max_length=100,unique=True)
     address = models.CharField(max_length=1000,unique=True)
     mapUrl = models.CharField(max_length=10000,unique=True)
+    status = models.IntegerField(choices=STATUS, default=0)
     imgUrl = ["//assets/images/tbd.png","//assets/images/tbd.png"]
     
 
