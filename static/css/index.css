@@ -1089,7 +1089,7 @@ contact
 }
 
 .contact-form p{
-    font-size: 35px !important;
+    font-size: initial;
     color: white;
     font-weight: bold;
 }
