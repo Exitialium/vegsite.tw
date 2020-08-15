@@ -501,7 +501,7 @@ header
     opacity: 1;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: black;
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
