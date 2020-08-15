@@ -752,7 +752,8 @@ subscribe
 .cta-content h2 em {
   font-style: normal;
   font-weight: bold;
-  color: black;
+  color: white;
+  background: #ed563b;
 }
 
 .cta-content p {
