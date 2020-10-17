@@ -737,7 +737,7 @@ subscribe
   background-image: url(https://res.cloudinary.com/vegsite/image/upload/v1602934893/cta_bg.jpg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   text-align: center;
 }
 
@@ -752,8 +752,7 @@ subscribe
 .cta-content h2 em {
   font-style: normal;
   font-weight: bold;
-  color: white;
-  background: #ed563b;
+  color: black;
 }
 
 .cta-content p {
