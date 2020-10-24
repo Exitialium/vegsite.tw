@@ -19,11 +19,11 @@ window.location = https://vegsite.herokuapp.com/;
 </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="台北Vegan蔬食地圖餐廳資訊平台，在大台北地區搜集了400+葷食餐廳擁有的vegan選項。Make Vegan Easy!">
+    <meta name="description" content="台北Vegan蔬食地圖餐廳資訊平台">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Vegansite - 台北Vegan蔬食地圖</title>
+    <title>Vegansite - Taipei Vegan Map</title>
 
     <!-- Additional CSS Files -->
 
@@ -69,10 +69,10 @@ window.location = https://vegsite.herokuapp.com/;
                             <!-- ***** Menu Start ***** -->
                             
                             <ul class="nav">
-                                <li class="scroll-to-section"><a href="#call-to-action" class="active">理念</a></li>
-                                <li class="scroll-to-section"><a href="#features">餐廳</a></li>
-                                <li class="scroll-to-section"><a href="#our-classes">地圖</a></li>
-                                <li class="scroll-to-section"><a href="#contact-us">聯絡我們</a></li> 
+                                <li class="scroll-to-section"><a href="#call-to-action" class="active">Philosophy</a></li>
+                                <li class="scroll-to-section"><a href="#features">Restaurants</a></li>
+                                <li class="scroll-to-section"><a href="#our-classes">Map</a></li>
+                                <li class="scroll-to-section"><a href="#contact-us">Contact</a></li> 
                             </ul>        
                             <a class='menu-trigger'>
                                 <span>Menu</span>
@@ -88,9 +88,11 @@ window.location = https://vegsite.herokuapp.com/;
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
-     <video autoplay="" muted="" loop="" id="bg-video">
+         <video autoplay="" muted="" loop="" id="bg-video">
             <source src="https://res.cloudinary.com/vegsite/video/upload/v1603503923/10000000_3539653189407156_2417856653010542795_n_gdczjf.mp4" type="video/mp4">
         </video>
+            
+        
 
         <div class="header-text">
             <div class="caption">
@@ -111,11 +113,9 @@ window.location = https://vegsite.herokuapp.com/;
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content" style="max-width:70%;margin:auto;">
-                        <h2><em>理念</em></h2>
-                        <p>以降低成為vegan的門檻作為階段目標<br>高舉Vegan、反物種歧視、解放動物的旗幟<br>抵抗畜牧業、屠宰業的微弱掙扎<br>正視大自然的反撲<br>
-                        重新搭建起人與自然的橋樑<br>實現一個對自然、動物更友善的世界</p>
-                        <p>Veganism is a way of living which seeks to exclude, as far as is possible and practicable, all forms of exploitation of, and cruelty to,animals for food, clothing or any other purpose.(The Vegan Society) -
-<br>簡言之，就是一個提倡動物權、致力於停止所有對動物的剝削的生活方式。</p>
+                        <h2><em>Philosophy</em></h2>
+                        <p>A website that aims to make veganism accessible for everyone in Taiwan<br>Uphold the principles of Veganism, Anti-Specism, and Animal Liberation<br>Erect barriers against animal husbandary and slaughtering <br>Eliminate the sufferings of animal<br>Restore peace and harmony between man and Nature<br></p>
+                        <p>Veganism is a way of living which seeks to exclude, as far as is possible and practicable, all forms of exploitation of, and cruelty to,animals for food, clothing or any other purpose.(The Vegan Society) -</p>
                         
                     </div>
                 </div>
@@ -130,9 +130,9 @@ window.location = https://vegsite.herokuapp.com/;
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2><em>Vegan</em>-friendly restaurants<br>Vegan友善餐廳</h2>
+                        <h2><em>Vegan</em>-friendly restaurants<br>Vegan-friendly restaurants</h2>
                         <img src="https://res.cloudinary.com/vegsite/image/upload/v1602931504/line-dec.png.png" alt="">
-                        <p>以下是精選的Vegan-friendly餐廳</p>
+                        <p>Vegan restaurants with detailed introduction</p>
                     </div>
                 </div>
                 {% for rest in restaurants_list %}
@@ -146,7 +146,7 @@ window.location = https://vegsite.herokuapp.com/;
                             <div class="right-content">
                                 <h4>{{rest.name}}</h4>
                                 <p>{{rest.description}}</p>
-                                <a href="/{{rest.slug}}" class="text-button">了解更多</a>
+                                <a href="/{{rest.slug}}" class="text-button">Learn more</a>
                             </div>
                         </li>
                     </ul>
@@ -166,7 +166,7 @@ window.location = https://vegsite.herokuapp.com/;
                     <div class="section-heading">
                         <h2><em>Vegan</em> map</h2>
                         <img src="https://res.cloudinary.com/vegsite/image/upload/v1602931504/line-dec.png.png" alt="">
-                        <p>Vegan 一點都不困難<br>以下是我們整理出來大台北地區的Vegan-Friendly餐廳<br>如果想跟我們合作歡迎聯絡我們<br>Credit: 酥皮</p>
+                        <p>Vegan diet can be easy<br>Here is a map that include 400+ vegan-friendly restaurants in Great Taipei Area<br>Feel free to contact us for more!<br>Special Credit: 酥皮</p>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@ window.location = https://vegsite.herokuapp.com/;
             <div class="row">
                 <div class="contactUs">
                     <div class="contact-form">
-                    <h2 class="contact-Us">聯絡我們</h2>
+                    <h2 class="contact-Us">Contact-us/h2>
                      <p class="contact-Us">Email: vegsite0203@gmail.com</p><br>
                      <a href="https://www.instagram.com/veg.site/" style="color:white; font-weight:bold;">IG:veg.site</a>
                     </div>
