@@ -139,13 +139,13 @@ window.location = https://vegsite.herokuapp.com/;
                     <ul class="features-items">
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="{% static "images/"|add:rest.dirName|add:"/front.jpg" %}" alt="No picture yet..." style="max-width: 100%;">
+                                <img src="{#% static "images/"|add:rest.dirName|add:"/front.jpg" %#}" alt="No picture yet..." style="max-width: 100%;">
                                 <br>
                             </div>
                             <div class="right-content">
                                 <h4>{{rest.name}}</h4>
                                 <p>{{rest.description}}</p>
-                                <a href="/{{rest.slug}}" class="text-button">了解更多</a>
+                                <a href="/{#{rest.slug}#}" class="text-button">了解更多</a>
                             </div>
                         </li>
                     </ul>
