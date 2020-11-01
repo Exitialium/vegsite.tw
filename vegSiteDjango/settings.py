@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'subdomains.middleware.SubdomainURLRoutingMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -53,6 +54,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'vegSiteDjango.urls'
+
+SUBDOMAIN_URLCONFS = {
+    None: 'vegsiteDjango.urls.frontend',  # no subdomain, e.g. ``example.com``
+    'www': 'vegsiteDjango.urls.frontend',
+    'api': 'vegsiteDjango.urls.api',
+}
+
 
 TEMPLATES = [
     {
