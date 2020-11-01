@@ -122,7 +122,9 @@ window.location = https://vegsite.herokuapp.com/;
     </section>
     <!-- ***** Call to Action End ***** -->
     
-    <!-- ***** Features Item Start ***** -->
+    <!-- 
+
+    
     <section class="section" id="features">
         <div class="container">
             <div class="row">
@@ -133,29 +135,31 @@ window.location = https://vegsite.herokuapp.com/;
                         <p>Vegan restaurants with detailed introduction</p>
                     </div>
                 </div>
-                {% for rest in restaurants_list %}
+                {#% for rest in restaurants_list %#}
                 <div class="col-lg-6">
                     <ul class="features-items">
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="{% static "images/"|add:rest.dirName|add:"/front.jpg" %}" alt="No picture yet..." style="max-width: 100%;">
+                                <img src="{#% static "images/"|add:rest.dirName|add:"/front.jpg" %#}" alt="No picture yet..." style="max-width: 100%;">
                                 <br>
                             </div>
                             <div class="right-content">
-                                <h4>{{rest.name}}</h4>
-                                <p>{{rest.description}}</p>
+                                <h4>{#{rest.name}#}</h4>
+                                <p>{#{rest.description}#}</p>
                                 <a href="/{{rest.slug}}" class="text-button">Learn more</a>
                             </div>
                         </li>
                     </ul>
                 </div>
-                {% endfor %}
+                {#% endfor %#}
                 
             </div>
         </div>
     </section>
-    <!-- ***** Features Item End ***** -->    
+        
     
+    -->
+
     <!-- ***** Our Classes Start ***** -->
     <section class="section" id="our-classes">
         <div class="container">
